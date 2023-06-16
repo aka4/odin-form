@@ -21,7 +21,7 @@
             <p>You <i>know</i> you want to.</p>
             <div id="formcon">
                 <h2>Let's do this!</h2>
-                <form action="/my-handling-form-page" method="post">
+                <form id="myForm" action="/my-handling-form-page" method="post">
                     <div class="input">
                         <label for="fname">FIRST NAME</label>
                         <input type="text" id="fname" name="user_first_name" />
@@ -46,8 +46,10 @@
                         <label for="confpass">CONFIRM PASSWORD</label>
                         <input type="password" id="confpass" name="user_confirmed_password" />
                     </div>
-                    <input type="submit" id="submit-form" />
                 </form>
+            </div>
+            <div id="createAcc">
+                <button type="submit" form="myForm">CREATE ACCOUNT</button>
             </div>
         </div>
     </div>
